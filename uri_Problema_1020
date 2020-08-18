@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main () {
+   int N = 0 ;
+    scanf("%d",&N);
+    int anos = N/365;
+    int meses = (N%365)/30;
+    int dias = (N%365)%30;
+   
+    printf("%d ano(s)\n", anos);
+    printf("%d mes(es)\n", meses);
+    printf("%d dia(s)\n", dias);
+    
+    return 0;
+    
+}
