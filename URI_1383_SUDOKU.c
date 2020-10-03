@@ -15,7 +15,7 @@ int main() {
     int erro3x3 = 0;
 
         // ENTRADA DE DADOS ///
-    //printf("%d\n\n\n",erro3x3);
+    printf("erro3x3 = %d\n\n\n",erro3x3);
     scanf("%d",&nMatrizes9x9);
     int matrizDeDados[9][9][nMatrizes9x9];
     for (k=0;k<nMatrizes9x9;k++){ //loop para cada matriz 9x9
@@ -36,7 +36,7 @@ int main() {
     k=0;
     i=0;
     n=0;
-    //printf("%d\n\n\n",erro3x3);
+    printf("erro3x3= %d\n\n\n",erro3x3);
     for (k=0;k<nMatrizes9x9;k++){ //loop para cada matriz 9x9 (eixo z)
         errosLinhas = 0;
         errosColunas = 0;
@@ -56,11 +56,11 @@ int main() {
                 errosLinhas = errosLinhas + 1;
             }
                
-            //printf("soma elementos linha %d = %d\n",i,somaElementosLinha);
-            //printf("erros linha = %d\n",errosLinhas);
+            printf("soma elementos linha %d = %d\n",i,somaElementosLinha);
+            printf("erros linha = %d\n",errosLinhas);
         }
      //Checas se as colunas atendem as condiçoes
-    //printf("%d\n\n\n",erro3x3);
+    printf("erro3x3 = %d\n\n\n",erro3x3);
         for (n=0;n<9;n++){ //loop para cada coluna 
             somaElementosColuna = 0;
             for (i=0;i<9;i++) { //loop das linhas na mesma coluna (eixo x)                             
@@ -75,8 +75,8 @@ int main() {
             }
                 
                
-             //printf("soma elementos coluna %d = %d\n",n,somaElementosColuna);
-                //printf("erros colunas = %d\n",errosColunas);
+             printf("soma elementos coluna %d = %d\n",n,somaElementosColuna);
+             printf("erros colunas = %d\n",errosColunas);
         }
         //checa matrizes 3*3
         erro3x3 = 0;
@@ -91,7 +91,7 @@ int main() {
                 erro3x3 = erro3x3 +1;
             }
         }
-        //printf("Erros matriz 3x3- 1: %d ////// soma matriz 3x3-1 = %d\n", erro3x3,somaMatriz3x3);
+        printf("Erros matriz 3x3- 1: %d ////// soma matriz 3x3-1 = %d\n", erro3x3,somaMatriz3x3);
 
 
          //matriz3x3-2
@@ -104,7 +104,7 @@ int main() {
             if (somaMatriz3x3 != 285) {
                 erro3x3 = erro3x3 +1;
             }
-        //printf("Erros matriz 3x3- 2: %d ////// soma matriz 3x3-2 = %d\n", erro3x3,somaMatriz3x3);
+        printf("Erros matriz 3x3- 2: %d ////// soma matriz 3x3-2 = %d\n", erro3x3,somaMatriz3x3);
          //matriz3x3-3
         somaMatriz3x3 = 0;
         for(i=0;i<3;i++){
@@ -115,7 +115,7 @@ int main() {
             if (somaMatriz3x3 != 285) {
                 erro3x3 = erro3x3 +1;
             }
-        //printf("Erros matriz 3x3- 3: %d ////// soma matriz 3x3-3 = %d\n", erro3x3,somaMatriz3x3);
+        printf("Erros matriz 3x3- 3: %d ////// soma matriz 3x3-3 = %d\n", erro3x3,somaMatriz3x3);
         //matriz3x3-4
         somaMatriz3x3 = 0;
         for(i=3;i<6;i++){
@@ -126,7 +126,7 @@ int main() {
             if (somaMatriz3x3 != 285) {
                 erro3x3 = erro3x3 +1;
             }
-        //printf("Erros matriz 3x3- 4: %d ////// soma matriz 3x3-4 = %d\n", erro3x3,somaMatriz3x3);
+        printf("Erros matriz 3x3- 4: %d ////// soma matriz 3x3-4 = %d\n", erro3x3,somaMatriz3x3);
         //matriz3x3-5
         somaMatriz3x3 = 0;
         for(i=3;i<6;i++){
@@ -137,7 +137,7 @@ int main() {
             if (somaMatriz3x3 != 285) {
                 erro3x3 = erro3x3 +1;
             }
-       //printf("Erros matriz 3x3- 5: %d ////// soma matriz 3x3-5 = %d\n", erro3x3,somaMatriz3x3);
+       printf("Erros matriz 3x3- 5: %d ////// soma matriz 3x3-5 = %d\n", erro3x3,somaMatriz3x3);
          //matriz3x3-6
         somaMatriz3x3 = 0;
         for(i=3;i<6;i++){
@@ -148,7 +148,7 @@ int main() {
             if (somaMatriz3x3 != 285) {
                 erro3x3 = erro3x3 +1;
             }
-        //printf("Erros matriz 3x3- 6: %d ////// soma matriz 3x3-6 = %d\n", erro3x3,somaMatriz3x3);
+        printf("Erros matriz 3x3- 6: %d ////// soma matriz 3x3-6 = %d\n", erro3x3,somaMatriz3x3);
          //matriz3x3-7
         somaMatriz3x3 = 0;
         for(i=6;i<9;i++){
@@ -159,7 +159,7 @@ int main() {
             if (somaMatriz3x3 != 285) {
                 erro3x3 = erro3x3 +1;
             }
-        //printf("Erros matriz 3x3- 7: %d ////// soma matriz 3x3-7 = %d\n", erro3x3,somaMatriz3x3);
+        printf("Erros matriz 3x3- 7: %d ////// soma matriz 3x3-7 = %d\n", erro3x3,somaMatriz3x3);
         //matriz3x3-8
         somaMatriz3x3 = 0;
         for(i=6;i<9;i++){
@@ -170,7 +170,7 @@ int main() {
             if (somaMatriz3x3 != 285) {
                 erro3x3 = erro3x3 +1;
             }
-        //printf("Erros matriz 3x3- 8: %d ////// soma matriz 3x3-8 = %d\n", erro3x3,somaMatriz3x3);
+        printf("Erros matriz 3x3- 8: %d ////// soma matriz 3x3-8 = %d\n", erro3x3,somaMatriz3x3);
         //matriz3x3-9
         somaMatriz3x3 = 0;
         for(i=6;i<9;i++){
@@ -181,9 +181,9 @@ int main() {
             if (somaMatriz3x3 != 285) {
                 erro3x3 = erro3x3 +1;
             }
-        //printf("Erros matriz 3x3- 9: %d ////// soma matriz 3x3-9 = %d\n", erro3x3,somaMatriz3x3);
+        printf("Erros matriz 3x3- 9: %d ////// soma matriz 3x3-9 = %d\n", erro3x3,somaMatriz3x3);
         printf("Instancia %d\n",k+1);
-        if (errosLinhas == 0 && errosColunas == 0 && erro3x3 == 0) {
+        if (errosLinhas == 0 && errosColunas == 0 && erro3x3 == 2) {
             printf("SIM\n");
             printf("\n");
         }else{
@@ -197,8 +197,6 @@ int main() {
     }
     return 0;
 }     
-    
-
-   
+  
     
 
