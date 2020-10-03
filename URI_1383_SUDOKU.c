@@ -86,11 +86,11 @@ int main() {
             for(n=0;n<3;n++){
                 somaMatriz3x3 = somaMatriz3x3 + ((matrizDeDados[i][n][k])*(matrizDeDados[i][n][k]));
             } 
-
+        }
             if (somaMatriz3x3 != 285 ) {
                 erro3x3 = erro3x3 +1;
             }
-        }
+        
         printf("Erros matriz 3x3- 1: %d ////// soma matriz 3x3-1 = %d\n", erro3x3,somaMatriz3x3);
 
 
@@ -183,7 +183,7 @@ int main() {
             }
         printf("Erros matriz 3x3- 9: %d ////// soma matriz 3x3-9 = %d\n", erro3x3,somaMatriz3x3);
         printf("Instancia %d\n",k+1);
-        if (errosLinhas == 0 && errosColunas == 0 && erro3x3 == 2) {
+        if (errosLinhas == 0 && errosColunas == 0 && erro3x3 == 0) {
             printf("SIM\n");
             printf("\n");
         }else{
